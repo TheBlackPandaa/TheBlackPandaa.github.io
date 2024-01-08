@@ -4,7 +4,7 @@ $(document).ready(function() {
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
   const myHeaders = new Headers();
-	myHeaders.set("Access-Control-Allow-Origin");
+	myHeaders.set("Access-Control-Allow-Origin", "*");
 
   // init
   getAllTasks();
